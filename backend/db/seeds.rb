@@ -48,4 +48,28 @@ Venue.create([
 
 ])
 
+Show.create([
+    {
+      name: "RHEMA FEST",
+      city: "Nairobi",
+      image_link: "www.rhemafest.com"
+      
+    },
+
+    {
+        name: "CULTURE MAMBO",
+        city: "Nakuru",
+        image_link: "www.culturemambo.com"
+        
+      },
+
+      {
+        name: "AMAPIANO FEST",
+        city: "Kisumu",
+        image_link: "www.amapiano.com"
+        
+      }
+
+])
+
 puts "✅ Done seeding!"
