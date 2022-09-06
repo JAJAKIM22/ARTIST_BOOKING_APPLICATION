@@ -21,6 +21,31 @@ Artist.create([
     image_link: "www.sailors.com",
     genres: "Gengetone"
   }
+
+])
+
+Venue.create([
+    {
+      name: "Sarova",
+      city: "Nairobi",
+      image_link: "www.sarova.com"
+      
+    },
+
+    {
+        name: "Bomas",
+        city: "Nairobi",
+        image_link: "www.bomas.com"
+        
+      },
+
+      {
+        name: "Westside",
+        city: "Nakuru",
+        image_link: "www.westside.com"
+        
+      }
+
 ])
 
 puts "✅ Done seeding!"
