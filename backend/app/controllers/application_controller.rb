@@ -7,8 +7,8 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/artists/:id" do
-    artists = Artist.find(params[:id])
-    artists.to_json
+    artist = Artist.find(params[:id])
+    artist.to_json
   end
   
   post "/artists" do
@@ -28,8 +28,8 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/venues/:id" do
-    venues = Venue.find_by(params[:id])
-    venues.to_json
+    venue = Venue.find_by(params[:id])
+    venue.to_json
   end
 
   post "/venues" do
@@ -43,6 +43,25 @@ class ApplicationController < Sinatra::Base
     venue.to_json
   end
 
+  get "/shows" do
+    shows = Show.all.order(:created_at)
+    shows.to_json
+  end
+
+  get "/shows/:id" do
+    show = Show.find_by(params[:id])
+    show.to_json
+  end
+
+  post "/shows" do
+    show = Show.create(name: params[:name], city: params[:city], image_link: params[:image_link] )
+    show.to_json
+  end
   
+  delete "/shows/:id" do
+    show = Show.find(params[:id])
+    show.destroy
+    show.to_json
+  end
   
 end
