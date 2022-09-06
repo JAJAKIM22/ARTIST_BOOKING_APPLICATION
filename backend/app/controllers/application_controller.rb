@@ -6,10 +6,21 @@ class ApplicationController < Sinatra::Base
     artists.to_json
   end
  
-
   
   delete "/artists/:id" do
-    artist = Message.find(params[:id])
+    artist = Artist.find(params[:id])
+    artist.destroy
+    artist.to_json
+  end
+
+  get "/venues" do
+    artists = Venue.all.order(:created_at)
+    artists.to_json
+  end
+ 
+  
+  delete "/venues/:id" do
+    artist = Venue.find(params[:id])
     artist.destroy
     artist.to_json
   end
