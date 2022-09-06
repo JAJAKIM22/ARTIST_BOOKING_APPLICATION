@@ -1,24 +1,21 @@
+import React from "react";
+import ArtistContainer from "./ArtistContainer"
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+
 
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
   
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return (
+    <div className="app">
+      <Router>
+       <Routes>
+       <Route exact path="/artist" element={<ArtistContainer/>}></Route>
+       </Routes>
+      </Router>  
     </div>
+    
   );
-}
+  }
 
 export default App;
