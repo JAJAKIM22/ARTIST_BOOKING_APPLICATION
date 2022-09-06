@@ -28,7 +28,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/venues/:id" do
-    venue = Venue.find_by(params[:id])
+    venue = Venue.find(params[:id])
     venue.to_json
   end
 
@@ -49,7 +49,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/shows/:id" do
-    show = Show.find_by(params[:id])
+    show = Show.find(params[:id])
     show.to_json
   end
 
