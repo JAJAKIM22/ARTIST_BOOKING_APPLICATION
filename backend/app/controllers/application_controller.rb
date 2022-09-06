@@ -16,6 +16,12 @@ class ApplicationController < Sinatra::Base
     artist.to_json
   end
   
+  patch "/artists/:id" do
+    artist = Artist.find(params[:id])
+    artist.update(name: params[:name], city: params[:city], image_link: params[:image_link], genres: params[:genres])
+    artist.to_json
+  end
+
   delete "/artists/:id" do
     artist = Artist.find(params[:id])
     artist.destroy
@@ -34,6 +40,12 @@ class ApplicationController < Sinatra::Base
 
   post "/venues" do
     venue = Venue.create(name: params[:name], city: params[:city], image_link: params[:image_link] )
+    venue.to_json
+  end
+
+  patch "/venues/:id" do
+    venue = Venue.find(params[:id])
+    venue.update(name: params[:name], city: params[:city], image_link: params[:image_link])
     venue.to_json
   end
   
@@ -55,6 +67,12 @@ class ApplicationController < Sinatra::Base
 
   post "/shows" do
     show = Show.create(name: params[:name], city: params[:city], image_link: params[:image_link] )
+    show.to_json
+  end
+
+  patch "/shows/:id" do
+    show = Show.find(params[:id])
+    show.update(name: params[:name], city: params[:city], image_link: params[:image_link])
     show.to_json
   end
   
