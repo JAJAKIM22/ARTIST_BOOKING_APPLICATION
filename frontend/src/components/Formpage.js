@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function NewArtistForm() {
+function NewForm() {
   const [name, setName] = useState("");
   const [city, setCity] = useState("");
   const [image_link, setImage_link] = useState("");
@@ -23,6 +23,7 @@ function NewArtistForm() {
       body: JSON.stringify(formData),
     });}
 
+    
  return (
     <form onSubmit={handleSubmit}  class="mb-3" className="new-artist-form"> 
      <input value={name}
@@ -35,7 +36,8 @@ function NewArtistForm() {
   onChange={(e) => setGenres(e.target.value)} placeholder="Genres" />
       <input type="submit" value="POST ARTISTS" />
 </form>
+
 );
 }
 
-export default NewArtistForm;
+export default NewForm;
