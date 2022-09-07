@@ -1,10 +1,12 @@
-import React from "react";
+import React  from "react";
 import Card from 'react-bootstrap/Card';
+import NewArtistForm from "./Formpage"
 
 function Artist({pName, pCity, pImage_link, pGenres}) {
 
+
   return (
-    <div class="row">
+    <div class="col">
       <div class="col-sm-10">
         <div class="card" style={{ width: '25rem' }}>
           <div class="card-body">
@@ -15,8 +17,12 @@ function Artist({pName, pCity, pImage_link, pGenres}) {
           </div>
         </div>
       </div>
+      <div>
+      <NewArtistForm/>
       </div>
-  );
+      </div>
+);
+
 }
 
 export default Artist;
