@@ -12,6 +12,9 @@ function Venue({pName, pCity, pImage_link}) {
             <h5 class="card-name">{pName}</h5>
             <h5 class="card-city">{pCity}</h5>
             <Card.Img variant="top" src= {pImage_link}/>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end" style={{margin: 8 + 'px'}}>
+           <button class="btn btn-primary" type="button">DELETE</button>
+           </div>
           </div>
         </div>
       </div>

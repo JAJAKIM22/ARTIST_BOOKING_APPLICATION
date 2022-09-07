@@ -15,9 +15,9 @@ function Artist({pName, pCity, pImage_link, pGenres}) {
             <h5 class="card-city">{pCity}</h5>
             <Card.Img variant="top" src= {pImage_link} style={{height: 200 + 'px', width:400 + 'px'}}/>
             <h5 class="card-genres">{pGenres}</h5>
-            <button>
-              DELETE
-            </button>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+           <button class="btn btn-primary" type="button">DELETE</button>
+           </div>
           </div>
         </div>
       </div>
