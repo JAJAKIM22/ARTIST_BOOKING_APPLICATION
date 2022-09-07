@@ -21,7 +21,6 @@ function App() {
        <Route exact path="/venues" element={<VenueContainer/>}></Route>
        <Route exact path="/shows" element={<ShowContainer/>}></Route>
        <Route exact path="/forms" element={<NewForm/>}></Route>
-       
        </Routes>
       </Router>  
     </div>
