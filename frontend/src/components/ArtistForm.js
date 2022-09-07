@@ -26,7 +26,8 @@ function NewArtistForm() {
 
     
  return (
-    <form onSubmit={handleSubmit}  class="mb-3" className="new-artist-form"> 
+   <div class= "form" >
+    <form onSubmit={handleSubmit}  class="newform" className="newform"> 
      <input value={name}
   onChange={(e) => setName(e.target.value)} placeholder="NAME" />
      <input value={city}
@@ -37,7 +38,7 @@ function NewArtistForm() {
   onChange={(e) => setGenres(e.target.value)} placeholder="Genres" />
       <input type="submit" value="POST ARTISTS" />
 </form>
-
+</div>
 );
 }
 

@@ -25,7 +25,8 @@ function NewShowForm() {
 
     
  return (
-    <form onSubmit={handleSubmit}  class="mb-3" className="new-show-form"> 
+  <div class= "form" >
+    <form onSubmit={handleSubmit}  class="mb-3" className="show-form"> 
      <input value={name}
   onChange={(e) => setName(e.target.value)} placeholder="NAME" />
      <input value={city}
@@ -34,7 +35,7 @@ function NewShowForm() {
   onChange={(e) => setImage_link(e.target.value)} placeholder="IMAGE_LINK" />
       <input type="submit" value="POST SHOWS" />
 </form>
-
+</div>
 );
 }
 

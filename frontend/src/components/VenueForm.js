@@ -25,7 +25,8 @@ function NewVenueForm() {
 
     
  return (
-    <form onSubmit={handleSubmit}  class="mb-3" className="new-artist-form"> 
+  <div class= "form" >
+    <form onSubmit={handleSubmit}  class="mb-2" className="artistsform"> 
      <input value={name}
   onChange={(e) => setName(e.target.value)} placeholder="NAME" />
      <input value={city}
@@ -34,7 +35,7 @@ function NewVenueForm() {
   onChange={(e) => setImage_link(e.target.value)} placeholder="IMAGE_LINK" />
       <input type="submit" value="POST VENUES" />
 </form>
-
+</div>
 );
 }
 

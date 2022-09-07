@@ -6,7 +6,7 @@ function NewForm() {
 
     
  return (
-    <div>
+    <div class="form">
       <NewArtistForm/>
      <NewVenueForm/>
      <NewShowForm/>
