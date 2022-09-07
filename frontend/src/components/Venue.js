@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 function Venue({pName, pCity, pImage_link}) {
 
   return (
+    <div class= "scard" >
     <div class="row">
       <div class="col-sm-10">
         <div class="card" style={{ width: '28rem' }}>
@@ -13,6 +14,7 @@ function Venue({pName, pCity, pImage_link}) {
             <Card.Img variant="top" src= {pImage_link}/>
           </div>
         </div>
+      </div>
       </div>
       </div>
   );
