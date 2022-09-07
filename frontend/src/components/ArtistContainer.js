@@ -17,7 +17,7 @@ function ArtistsContainer() {
 
   
   return (
-    <div class="container-fluid" className="artists-container">
+    <div className="container-fluid">
      {artistsCard}
     </div>
   );
