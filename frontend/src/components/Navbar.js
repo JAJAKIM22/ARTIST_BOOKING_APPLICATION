@@ -10,10 +10,7 @@ import { Link } from "react-router-dom";
         <button class="btn btn-outline-success me-5" type="button"><Link className="nav-link" to="/shows">SHOWS</Link></button>
         <button class="btn btn-outline-success me-5" type="button"> <Link className="nav-link" to="/forms">POSTPAGE</Link></button>
       </form>
-    </nav>
-         
-
-              
+    </nav>         
 
     )
 
