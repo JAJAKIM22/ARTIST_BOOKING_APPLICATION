@@ -11,6 +11,8 @@ function App() {
       <Router>
        <Routes>
        <Route exact path="/artist" element={<ArtistContainer/>}></Route>
+       <Route exact path="/venue" element={<ArtistContainer/>}></Route>
+       <Route exact path="/show" element={<ArtistContainer/>}></Route>
        </Routes>
       </Router>  
     </div>
