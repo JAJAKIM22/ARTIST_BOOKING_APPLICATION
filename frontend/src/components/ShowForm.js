@@ -5,13 +5,14 @@ function NewShowForm() {
   const [name, setName] = useState("");
   const [city, setCity] = useState("");
   const [image_link, setImage_link] = useState("");
-  
+  const [date, setDate] = useState("");
   
   function handleSubmit(event) {
     const formData = {
       name: name,
       city: city,
       image_link: image_link,
+      date: date,
     };
     console.log(formData);
     event.preventDefault();
@@ -33,6 +34,8 @@ function NewShowForm() {
   onChange={(e) => setCity(e.target.value)} placeholder="CITY" />
      <input value={image_link}
   onChange={(e) => setImage_link(e.target.value)} placeholder="IMAGE_LINK" />
+   <input value={date}
+  onChange={(e) => setDate(e.target.value)} placeholder="DATE" />
       <input type="submit" value="POST SHOWS" />
 </form>
 </div>

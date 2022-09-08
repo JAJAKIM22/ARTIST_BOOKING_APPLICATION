@@ -13,7 +13,7 @@ function ShowsContainer() {
   }, []);
   
 
-  const showsCard = shows.map( (show)=> (<Show key={show.id}  pName={show.name} pCity={show.city}  pImage_link={show.image_link}/>))
+  const showsCard = shows.map( (show)=> (<Show key={show.id}  pName={show.name} pCity={show.city}  pImage_link={show.image_link}  pDate={show.date}/>))
 
   
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
 
-function Show({pName, pCity, pImage_link}) {
+function Show({pName, pCity, pImage_link, pDate}) {
 
   return (
     <div class= "scard" >
@@ -12,6 +12,7 @@ function Show({pName, pCity, pImage_link}) {
           <h5 class="card-name">NAME: {pName}</h5>
           <h5 class="card-city">CITY: {pCity}</h5> 
          <Card.Img variant="top" src= {pImage_link} style={{height: 200 + 'px', width:400 + 'px'}}/>
+         <h5 class="card-date">DATE: {pDate}</h5>
          <div class="d-grid gap-2 d-md-flex justify-content-md-end" style={{margin: 8 + 'px'}}>
            <button class="btn btn-primary" type="button">DELETE</button>
            </div>

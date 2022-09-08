@@ -1,9 +1,17 @@
 import React  from "react";
 import Card from 'react-bootstrap/Card';
+ 
+const artistAPI = "http://localhost:9292/artists"
 
+function Artist({removeArtist, pId, pName, pCity, pImage_link, pGenres}) {
 
-function Artist({pName, pCity, pImage_link, pGenres}) {
-  
+  function onDeleteClick(e) {
+    e.preventDefault();
+    fetch(`${artistAPI}/${pId}`, {
+      method: "DELETE",
+    });
+    removeArtist(pId);
+  }
 
   return (
     <div class= "scard" >
@@ -16,7 +24,7 @@ function Artist({pName, pCity, pImage_link, pGenres}) {
             <Card.Img variant="top" src= {pImage_link} style={{height: 200 + 'px', width:400 + 'px'}}/>
             <h5 class="card-genres">GENRE: {pGenres}</h5>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-           <button class="btn btn-primary" type="button">DELETE</button>
+           <button onClick = {onDeleteClick} class="btn btn-primary" type="button">DELETE</button>
            </div>
           </div>
         </div>

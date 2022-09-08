@@ -12,9 +12,11 @@ function ArtistsContainer() {
       });
   }, []);
   
+function removeArtist(removeartist){
+setArtistList(artists.filter(artist=>artist.id !==removeartist))
+}
 
-
-  const artistsCard = artists.map( (artist)=> (<Artist key={artist.id}  pName={artist.name} pCity={artist.city}  pImage_link={artist.image_link} pGenres={artist.genres}/>))
+  const artistsCard = artists.map( (artist)=> (<Artist key={artist.id} pId={artist.id}  pName={artist.name} pCity={artist.city}  pImage_link={artist.image_link} pGenres={artist.genres} removeArtist={removeArtist}/>))
 
   
   return (
