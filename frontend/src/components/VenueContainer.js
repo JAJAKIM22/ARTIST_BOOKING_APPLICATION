@@ -11,9 +11,12 @@ function VenuesContainer() {
       setVenueList(venuesData)
       });
   }, []);
-  
 
-  const venuesCard = venues.map( (venue)=> (<Venue key={venue.id}  pName={venue.name} pCity={venue.city}  pImage_link={venue.image_link}/>))
+  function removeVenue(removevenue){
+    setVenueList(venues.filter(venue=>venue.id !==removevenue))
+    }
+
+  const venuesCard = venues.map( (venue)=> (<Venue key={venue.id} pId={venue.id}  pName={venue.name} pCity={venue.city}  pImage_link={venue.image_link} removeVenue={removeVenue}/>))
 
   
   return (
