@@ -1,7 +1,16 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
 
-function Show({pName, pCity, pImage_link, pDate}) {
+const showAPI = "http://localhost:9292/shows"
+function Show({removeShow, pId, pName, pCity, pImage_link, pDate}) {
+
+  function onDeleteClick(e) {
+    e.preventDefault();
+    fetch(`${showAPI}/${pId}`, {
+      method: "DELETE",
+    });
+    removeShow(pId);
+  }
 
   return (
     <div class= "scard" >
@@ -14,7 +23,7 @@ function Show({pName, pCity, pImage_link, pDate}) {
          <Card.Img variant="top" src= {pImage_link} style={{height: 200 + 'px', width:400 + 'px'}}/>
          <h5 class="card-date">DATE: {pDate}</h5>
          <div class="d-grid gap-2 d-md-flex justify-content-md-end" style={{margin: 8 + 'px'}}>
-           <button class="btn btn-primary" type="button">DELETE</button>
+           <button onClick = {onDeleteClick} class="btn btn-primary" type="button">DELETE</button>
            </div>
         </div>
       </div>

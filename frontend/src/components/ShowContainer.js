@@ -12,8 +12,11 @@ function ShowsContainer() {
       });
   }, []);
   
+  function removeShow(removeshow){
+    setShowList(shows.filter(show=>show.id !==removeshow))
+    }
 
-  const showsCard = shows.map( (show)=> (<Show key={show.id}  pName={show.name} pCity={show.city}  pImage_link={show.image_link}  pDate={show.date}/>))
+  const showsCard = shows.map( (show)=> (<Show key={show.id} pId={show.id} pName={show.name} pCity={show.city}  pImage_link={show.image_link}  pDate={show.date} removeShow={removeShow}/>))
 
   
   return (
