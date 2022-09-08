@@ -12,7 +12,7 @@ function NewShowForm() {
       name: name,
       city: city,
       image_link: image_link,
-      date: date,
+      date: date
     };
     console.log(formData);
     event.preventDefault();
