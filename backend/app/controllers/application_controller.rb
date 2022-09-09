@@ -66,7 +66,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/shows" do
-    show = Show.create(name: params[:name], city: params[:city], image_link: params[:image_link] )
+    show = Show.create(name: params[:name], city: params[:city], image_link: params[:image_link], date: params[:date])
     show.to_json
   end
 

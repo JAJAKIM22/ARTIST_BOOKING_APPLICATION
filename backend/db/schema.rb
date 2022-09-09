@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_06_115810) do
+ActiveRecord::Schema.define(version: 2022_09_08_182859) do
 
   create_table "artists", force: :cascade do |t|
     t.string "name"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2022_09_06_115810) do
     t.string "name"
     t.string "city"
     t.string "image_link"
+    t.string "date"
   end
 
   create_table "venues", force: :cascade do |t|
