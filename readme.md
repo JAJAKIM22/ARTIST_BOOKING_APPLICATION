@@ -1,55 +1,70 @@
-# ARTIST_BOOKING_APP
-
-# ABOUT PROJECT
-This is a web application about an Artist Booking Application where artits can register , they can register shows and venues to be able to access them.
-
-# TECHNOLOGIES USED
-1.RUBY 2.REACT 
-
-# REQUIREMENTS
-This project requires Visual Studio code editor.
-
 # Getting Started with Create React App
-This project was bootstrapped with Create React App.
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+
 In the project directory, you can run:
 
- # 1. FRONTEND DIRECTORY
+### `npm start`
 
-## npm install
-Run this command in the frontend directory to install dependancies.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## npm start
-First open the frontend directory then run npm start.
-Runs the app in the development mode.
-Open http://localhost:3000 to view it in your browser.
-
-The page will reload when you make changes.
+The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-## npm install react-bootstrap bootsrap
-Installing Bootsrap for the application
+### `npm test`
 
-## npm install react-router-dom
-Installing router-dom to help in accessing routes.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-# 2. BACKEND DIRECTORY
+### `npm run build`
 
-## bundle install
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-In another terminal, `cd` into the `backend` directory, and run
-`bundle install` to install the dependencies.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## bundle exec rake db:migrate db:seed
-Run this command to add dummy data to the database.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## bundle exec rake server
-Open a new terminal in the backend directory and run bundle exec rake server to start the server. This will start the server on http://localhost:9292
+### `npm run eject`
 
-## Deployment
-DEPLOYED TO HEROKU:
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-# AUTHOR
-Peter Karanja Kimani
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
