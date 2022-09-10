@@ -48,7 +48,7 @@ Run this command to add dummy data to the database.
 Open a new terminal in the backend directory and run bundle exec rake server to start the server. This will start the server on http://localhost:9292
 
 ## Deployment
-DEPLOYED TO HEROKU:
+DEPLOYED TO HEROKU:  https://artist-booking-web-app.herokuapp.com
 
 
 # AUTHOR
