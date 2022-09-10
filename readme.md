@@ -45,7 +45,7 @@ In another terminal, `cd` into the `backend` directory, and run
 Run this command to add dummy data to the database.
 
 ## bundle exec rake server
-Open a new terminal in the backend directory and run bundle exec rake server to start the server. This will start the server on `http://localhost:9292`
+Open a new terminal in the backend directory and run bundle exec rake server to start the server. This will start the server on http://localhost:9292
 
 ## Deployment
 DEPLOYED TO HEROKU:
