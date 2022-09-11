@@ -49,7 +49,7 @@ Open a new terminal in the backend directory and run bundle exec rake server to 
 
 ## Deployment
 DEPLOYED TO HEROKU:  https://artist-booking-web-app.herokuapp.com
-
+Deployed the frontend only, will need to run the server first in the backendd folder to view the application.
 
 # AUTHOR
 Peter Karanja Kimani
