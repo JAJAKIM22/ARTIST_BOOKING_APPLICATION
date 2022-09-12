@@ -15,13 +15,13 @@ This project was bootstrapped with Create React App.
 ## Available Scripts
 In the project directory, you can run:
 
- # 1. FRONTEND DIRECTORY
+ # 1. FRONTEND 
 
 ## npm install
-Run this command in the frontend directory to install dependancies.
+Run this command in the project directory to install dependancies.
 
 ## npm start
-First open the frontend directory then run npm start.
+In the project directory, run npm start.
 Runs the app in the development mode.
 Open http://localhost:3000 to view it in your browser.
 
