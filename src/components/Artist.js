@@ -1,6 +1,6 @@
 import React  from "react";
 import Card from 'react-bootstrap/Card';
- 
+import { Link } from "react-router-dom";
 const artistAPI = "http://localhost:9292/artists"
 
 function Artist({removeArtist, pId, pName, pCity, pImage_link, pGenres}) {
@@ -25,6 +25,7 @@ function Artist({removeArtist, pId, pName, pCity, pImage_link, pGenres}) {
             <h5 class="card-genres">GENRE: {pGenres}</h5>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
            <button onClick = {onDeleteClick} class="btn btn-primary" type="button">DELETE</button>
+           <button class="btn btn-outline-success me-5" type="button"> <Link className="nav-link" to="/editartistforms">EDITPAGE</Link></button>
            </div>
           </div>
         </div>

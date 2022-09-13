@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
         <button class="btn btn-outline-success me-5" type="button"><Link className="nav-link" to="/venues">VENUES</Link></button>
         <button class="btn btn-outline-success me-5" type="button"><Link className="nav-link" to="/shows">SHOWS</Link></button>
         <button class="btn btn-outline-success me-5" type="button"> <Link className="nav-link" to="/forms">POSTPAGE</Link></button>
-        <button class="btn btn-outline-success me-5" type="button"> <Link className="nav-link" to="/editforms">EDITPAGE</Link></button>
       </form>
     </nav>         
 
